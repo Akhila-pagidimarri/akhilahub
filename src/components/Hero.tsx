@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
+import profileImage from "@/assets/akhila-profile.jpg";
 
 const Hero = () => {
   return (
     <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-20">
       <div className="container max-w-4xl text-center">
         <div className="mb-8">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-accent shadow-vintage overflow-hidden">
-            <div className="w-full h-full bg-muted flex items-center justify-center text-6xl font-playfair text-primary">
-              AP
-            </div>
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-accent shadow-vintage overflow-hidden border-4 border-white/50">
+            <img 
+              src={profileImage}
+              alt="Akhila Pagidimarri - Profile Picture"
+              className="w-full h-full object-cover object-center"
+            />
           </div>
         </div>
         
