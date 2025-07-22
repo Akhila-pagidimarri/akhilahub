@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 const Contact = () => {
-  return (
-    <section className="py-20 bg-gradient-accent px-4">
+  return <section className="py-20 bg-gradient-accent px-4">
       <div className="container max-w-4xl mx-auto">
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-4">
           Let's Connect
@@ -86,21 +84,14 @@ const Contact = () => {
                     <label className="font-inter text-sm font-medium text-foreground mb-2 block">
                       Name
                     </label>
-                    <Input 
-                      placeholder="Your full name"
-                      className="font-inter"
-                    />
+                    <Input placeholder="Your full name" className="font-inter" />
                   </div>
                   
                   <div>
                     <label className="font-inter text-sm font-medium text-foreground mb-2 block">
                       Email
                     </label>
-                    <Input 
-                      type="email"
-                      placeholder="your.email@example.com"
-                      className="font-inter"
-                    />
+                    <Input type="email" placeholder="your.email@example.com" className="font-inter" />
                   </div>
                 </div>
                 
@@ -108,21 +99,14 @@ const Contact = () => {
                   <label className="font-inter text-sm font-medium text-foreground mb-2 block">
                     Subject
                   </label>
-                  <Input 
-                    placeholder="What would you like to discuss?"
-                    className="font-inter"
-                  />
+                  <Input placeholder="What would you like to discuss?" className="font-inter" />
                 </div>
                 
                 <div>
                   <label className="font-inter text-sm font-medium text-foreground mb-2 block">
                     Message
                   </label>
-                  <Textarea 
-                    placeholder="Tell me about your project, opportunity, or just say hello!"
-                    rows={5}
-                    className="font-inter"
-                  />
+                  <Textarea placeholder="Tell me about your project, opportunity, or just say hello!" rows={5} className="font-inter" />
                 </div>
                 
                 <Button variant="vintage" size="lg" className="w-full font-inter">
@@ -134,13 +118,9 @@ const Contact = () => {
         </div>
         
         <div className="text-center mt-16 pt-8 border-t border-border">
-          <p className="font-inter text-muted-foreground">
-            © 2024 Akhila Pagidimarri. Crafted with passion for data and innovation.
-          </p>
+          <p className="font-inter text-muted-foreground">©Akhila Pagidimarri. Crafted with passion for data and innovation.</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
