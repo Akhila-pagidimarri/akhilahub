@@ -55,7 +55,7 @@ const About = () => {
                   <p className="font-inter text-sm text-muted-foreground">
                     Sri Chaitanya Junior Kalasala, Hyderabad
                   </p>
-                  <p className="font-inter text-sm text-muted-foreground">August 2022</p>
+                  <p className="font-inter text-sm text-muted-foreground">2020-2022</p>
                 </div>
                 
                 <div>
@@ -65,7 +65,7 @@ const About = () => {
                   <p className="font-inter text-sm text-muted-foreground">
                     Sri Chaitanya Techno School, Hyderabad
                   </p>
-                  <p className="font-inter text-sm text-muted-foreground">April 2020</p>
+                  <p className="font-inter text-sm text-muted-foreground">2019-2020</p>
                 </div>
               </div>
             </div>
