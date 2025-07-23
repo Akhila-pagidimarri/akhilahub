@@ -1,6 +1,5 @@
 const About = () => {
-  return (
-    <section className="py-20 bg-gradient-warm px-4">
+  return <section className="py-20 bg-gradient-warm px-4">
       <div className="container max-w-4xl mx-auto">
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
           About Me
@@ -56,9 +55,7 @@ const About = () => {
                   <p className="font-inter text-sm text-muted-foreground">
                     Sri Chaitanya Junior Kalasala, Hyderabad
                   </p>
-                  <p className="font-inter text-sm text-muted-foreground">
-                    August 2020 – August 2022
-                  </p>
+                  <p className="font-inter text-sm text-muted-foreground">August 2022</p>
                 </div>
                 
                 <div>
@@ -68,9 +65,7 @@ const About = () => {
                   <p className="font-inter text-sm text-muted-foreground">
                     Sri Chaitanya Techno School, Hyderabad
                   </p>
-                  <p className="font-inter text-sm text-muted-foreground">
-                    June 2011 – April 2020
-                  </p>
+                  <p className="font-inter text-sm text-muted-foreground">April 2020</p>
                 </div>
               </div>
             </div>
@@ -106,8 +101,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
