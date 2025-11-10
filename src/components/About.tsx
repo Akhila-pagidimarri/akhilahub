@@ -8,24 +8,32 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="font-inter text-lg text-foreground leading-relaxed">
-              I am a third-year B.Tech. student in Computer Science & Engineering at 
-              Bhoj Reddy Engineering College for Women, Hyderabad, with a keen interest 
-              in Data Analytics.
+              Ambitious Computer Science undergraduate with hands-on experience in web security 
+              and data-driven projects (graphical password system + activity data analytics). 
+              Proficient in programming, visualisation and team-based work. Eager to contribute 
+              to an entry-level developer or analytics position in a forward-looking company.
             </p>
             
             <p className="font-inter text-lg text-foreground leading-relaxed">
-              I am proficient in Python and SQL, and thrive on extracting meaningful 
-              insights through data-driven experimentation and problem-solving. I have 
-              applied skills to real‑world projects—like building a Java‑based Restaurant 
-              Management System and a graphical password authentication tool—demonstrating 
-              both technical competence and creative thinking.
+              I am proficient in Python and SQL, and thrive on extracting meaningful insights 
+              through data-driven experimentation and problem-solving. I have applied skills to 
+              real‑world projects—like building a Java‑based Restaurant Management System and a 
+              graphical password authentication tool—demonstrating both technical competence and 
+              creative thinking.
             </p>
             
             <p className="font-inter text-lg text-foreground leading-relaxed">
-              I actively participate in workshops (such as R programming hackathons), 
-              lead volunteer initiatives, and enjoy collaborative tech projects. Passionate, 
-              analytical, and always learning, I am eager to contribute to data-driven 
-              innovations and grow in the dynamic field of analytics.
+              I have also analyzed wearable activity data using Python and SQL to uncover trends 
+              in steps, calories and sleep. Built an end-to-end pipeline from data cleaning to 
+              interactive visualisations and report generation. The full workflow is available on 
+              GitHub at github.com/Akhila-pagidimarri/Fitbit-Data-Analytics.
+            </p>
+            
+            <p className="font-inter text-lg text-foreground leading-relaxed">
+              I actively participate in workshops (such as R programming hackathons), lead 
+              volunteer initiatives, and enjoy collaborative tech projects. Passionate, analytical, 
+              and always learning, I am eager to contribute to data-driven innovations and grow 
+              in the dynamic field of analytics.
             </p>
           </div>
           
@@ -41,10 +49,13 @@ const About = () => {
                     B.Tech in Computer Science & Engineering
                   </h4>
                   <p className="font-inter text-sm text-muted-foreground">
-                    Bhoj Reddy Engineering College for Women, Hyderabad
+                    Bhoj Reddy Engineering College for Women, Hyderabad, India
                   </p>
                   <p className="font-inter text-sm text-muted-foreground">
                     November 2022 – August 2026
+                  </p>
+                  <p className="font-inter text-sm font-medium text-foreground mt-1">
+                    CGPA: 7.5
                   </p>
                 </div>
                 
@@ -53,9 +64,14 @@ const About = () => {
                     Intermediate (TSBIE)
                   </h4>
                   <p className="font-inter text-sm text-muted-foreground">
-                    Sri Chaitanya Junior Kalasala, Hyderabad
+                    Sri Chaitanya Junior Kalasala, Hyderabad, India
                   </p>
-                  <p className="font-inter text-sm text-muted-foreground">2020-2022</p>
+                  <p className="font-inter text-sm text-muted-foreground">
+                    August 2020 – August 2022
+                  </p>
+                  <p className="font-inter text-sm font-medium text-foreground mt-1">
+                    GPA: 9.21
+                  </p>
                 </div>
                 
                 <div>
@@ -63,9 +79,14 @@ const About = () => {
                     SSC
                   </h4>
                   <p className="font-inter text-sm text-muted-foreground">
-                    Sri Chaitanya Techno School, Hyderabad
+                    Sri Chaitanya Techno School, Hyderabad, India
                   </p>
-                  <p className="font-inter text-sm text-muted-foreground">2019-2020</p>
+                  <p className="font-inter text-sm text-muted-foreground">
+                    June 2011 – April 2020
+                  </p>
+                  <p className="font-inter text-sm font-medium text-foreground mt-1">
+                    GPA: 10.0
+                  </p>
                 </div>
               </div>
             </div>
@@ -82,11 +103,15 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  <span className="font-inter text-foreground">SQL Database Management</span>
+                  <span className="font-inter text-foreground">MySQL Database Management</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
                   <span className="font-inter text-foreground">Excel & Data Analysis</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  <span className="font-inter text-foreground">Java (Basics)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>

@@ -36,10 +36,20 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Button variant="vintage" size="lg" className="font-inter">
+          <Button 
+            variant="vintage" 
+            size="lg" 
+            className="font-inter"
+            onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             View Portfolio
           </Button>
-          <Button variant="outline-vintage" size="lg" className="font-inter">
+          <Button 
+            variant="outline-vintage" 
+            size="lg" 
+            className="font-inter"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Connect with Me
           </Button>
         </div>

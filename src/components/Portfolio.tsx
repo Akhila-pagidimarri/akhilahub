@@ -1,7 +1,22 @@
 import { Button } from "@/components/ui/button";
 
 const Portfolio = () => {
-  const projects = [
+  interface Project {
+    title: string;
+    description: string;
+    technologies: string[];
+    icon: string;
+    github?: string;
+  }
+
+  const projects: Project[] = [
+    {
+      title: "Fitbit Data Analytics",
+      description: "Analysed wearable-device activity and sleep data using Python and SQL to uncover patterns in steps, calories burned and sedentary minutes. Built a data-cleaning & transformation pipeline, created interactive visualisations and generated automated summary reports to highlight behavioural trends. Hosted the full workflow on GitHub for end-to-end transparency.",
+      technologies: ["Python", "SQL", "Data Visualisation", "Reporting"],
+      icon: "📊",
+      github: "https://github.com/Akhila-pagidimarri/Fitbit-Data-Analytics"
+    },
     {
       title: "Restaurant Management System",
       description: "Developed a Java-based system using SQL Server and NetBeans to digitize restaurant operations, enabling online menu browse, order placement (online/cash payments), table management, and feedback collection. Replaced manual processes with an automated solution, improving order accuracy, inventory control, and sales reporting while integrating cashback/offers.",
@@ -10,7 +25,7 @@ const Portfolio = () => {
     },
     {
       title: "Graphical Password Authentication",
-      description: "Developed a web-based authentication system combining image-based (graphical) and text-based passwords for enhanced security. Users authenticate by selecting specific image areas and entering text components, improving resistance to brute-force attacks.",
+      description: "Developed a web-based authentication system combining image-based (graphical) and text-based passwords for enhanced security. Users authenticate by selecting specific image areas and entering text components, improving resistance to brute-force attacks. Designed to provide a more secure and user-friendly login experience compared to traditional password systems.",
       technologies: ["Web Technologies", "Authentication", "Security"],
       icon: "🔐"
     }
@@ -27,7 +42,7 @@ const Portfolio = () => {
           Showcasing practical applications of my skills through innovative projects
         </p>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="group">
               <div className="bg-card rounded-lg p-8 shadow-soft hover:shadow-vintage transition-all duration-300 hover:-translate-y-1">
@@ -64,9 +79,16 @@ const Portfolio = () => {
                   <Button variant="vintage" size="sm" className="font-inter">
                     View Details
                   </Button>
-                  <Button variant="outline-vintage" size="sm" className="font-inter">
-                    GitHub Repository
-                  </Button>
+                  {project.github && (
+                    <Button 
+                      variant="outline-vintage" 
+                      size="sm" 
+                      className="font-inter"
+                      onClick={() => window.open(project.github, '_blank')}
+                    >
+                      GitHub Repository
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
